@@ -81,6 +81,51 @@ public class ImplementaionOfHashMap {
             }
         }
 
+        public V get (K key){
+            int bi = hashFunction(key);
+            int di = searInLL(key,bi);
+
+            if (di == -1) {
+                //key dosent exist
+                return null;
+            }else{
+                //key exists
+                Node data = buckets[bi].get(di);
+                return data.value;
+            }
+        }
+
+        public boolean containsKey(K key){
+            int bi = hashFunction(key);
+            int di = searInLL(key,bi);
+
+            if (di == -1) {
+                //key dosent exist
+                return false;
+            }else{
+                //key exists
+                return true;
+            }
+        }
+
+        public V remove(K key){
+            int bi = hashFunction(key);
+            int di = searInLL(key,bi);
+
+            if (di == -1) {
+                //key dosent exist
+                return null;
+            }else{
+                //key exists
+                Node data = buckets[bi].get(di);
+                return data.value;
+            }
+        }
+
+        public boolean isEmpty(){
+            return n == 0;
+        }
+
     }
 
     public static void main(String[] args) {
