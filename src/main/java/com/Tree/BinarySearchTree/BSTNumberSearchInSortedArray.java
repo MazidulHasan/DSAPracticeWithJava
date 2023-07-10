@@ -1,4 +1,4 @@
-package temp;
+package com.Tree.BinarySearchTree;
 
 public class BSTNumberSearchInSortedArray {
      public static int binarySearch(int[] arr, int target) {

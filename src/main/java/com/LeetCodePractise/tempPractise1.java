@@ -1,5 +1,4 @@
-package temp;
-
+package com.LeetCodePractise;
 public class tempPractise1 {
     public static void main(String[] args) {
         int[][] matrix = {
