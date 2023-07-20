@@ -1,4 +1,4 @@
-package com.AlphaReady.Sorting.BubbleSort;
+package com.AlphaReady.Sorting;
 
 public class BasicOfBubbbleSort {
     public static void bubbleSort(int arr[]){
