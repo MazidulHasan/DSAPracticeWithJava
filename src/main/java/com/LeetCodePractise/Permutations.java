@@ -16,7 +16,7 @@ public class Permutations {
 
             while (rSize>0) {
                 List<Integer> permutation = result.pollFirst();
-                for (int i = 0; i < permutation.size(); i++) {
+                for (int i = 0; i <= permutation.size(); i++) {
                     List<Integer> newPermutation = new ArrayList<Integer>(permutation);
                     newPermutation.add(i, num);
                     result.add(newPermutation);
