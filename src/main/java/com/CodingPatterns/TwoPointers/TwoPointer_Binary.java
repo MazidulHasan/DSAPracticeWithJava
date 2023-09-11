@@ -1,4 +1,4 @@
-package com.TwoPointers;
+package com.CodingPatterns.TwoPointers;
 
 public class TwoPointer_Binary {
     public static int [] binarySol(int [] arr, int target){

@@ -1,4 +1,4 @@
-package com.TwoPointers;
+package com.CodingPatterns.TwoPointers;
 
 public class TwoPointer_my {
     public static int [] twoPointer_my(int [] arr, int target){
