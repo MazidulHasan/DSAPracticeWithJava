@@ -3,19 +3,25 @@ package com.CodingPatterns.TwoPointers;
 public class TwoPointer_Binary {
     public static int [] binarySol(int [] arr, int target){
         int [] newarr = new int [2];
-        int high = arr.length;
-        int low = 1;
+        
 
         for (int i = 0; i < arr.length; i++) {
-            if (low <= high) {
+            int currentTarget = arr[i];
+            
+            int high = arr.length;
+            int low = i+1;
+
+            System.out.println("low:"+low+" and high:"+high);
+
+            while(low < high){
+                System.out.println("2low:"+low+" and 2high:"+high);
                 int mid = (low + high) / 2;
-                System.out.println("Mid "+ mid);
-                if ((arr[i] + arr[mid]) == target ) {
-                    newarr[0] = i;
-                    newarr[1] = mid;
-                    return newarr;
+                if (arr[mid] + currentTarget == target) {
+                    newarr[0] = arr[mid];
+                    newarr[1] = arr[i];
+                    return  newarr;
                 }
-                if (mid > target) {
+                else if (arr[mid] + currentTarget > target) {
                     low = mid;
                 }else{
                     high = mid;
@@ -26,7 +32,7 @@ public class TwoPointer_Binary {
     }
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5};
-        int [] sol =  binarySol(arr, 8);
+        int [] sol =  binarySol(arr, 1);
         
         for (int i = 0; i < sol.length; i++) {
             System.out.print(sol[i]+ " ");
