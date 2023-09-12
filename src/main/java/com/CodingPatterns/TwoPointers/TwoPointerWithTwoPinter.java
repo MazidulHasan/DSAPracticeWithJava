@@ -7,7 +7,7 @@ public class TwoPointerWithTwoPinter {
         int front = arr[0];
         int back = arr[arr.length-1];
         
-        for (int i = 0, j = arr.length-1; front < back;) {
+        for (int i = 0, j = arr.length-1; front <= back;) {
             System.out.println("Front:"+front+" and back:"+back);
             if (front + back == target) {
                 newarr[0] = arr[i];
