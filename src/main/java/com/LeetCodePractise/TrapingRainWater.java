@@ -1,4 +1,4 @@
-package temp;
+package com.LeetCodePractise;
 
 public class TrapingRainWater {
     public static int trap(int[] height) {

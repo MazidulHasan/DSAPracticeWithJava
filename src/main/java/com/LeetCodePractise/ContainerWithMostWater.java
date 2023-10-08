@@ -1,4 +1,4 @@
-package temp;
+package com.LeetCodePractise;
 
 public class ContainerWithMostWater {
     public static int maxArea(int[] height) {
