@@ -24,6 +24,16 @@ public class basicOfLinkedList {
         head = newNode;
     }
 
+    //delete first
+    public void deleteFirst(){
+        if (head == null) {
+            System.out.println("The list is empty");
+            return;
+        }
+
+        head = head.next;
+    }
+
 
     public void addLast(String data){
         Node newNode = new Node(data);
@@ -38,6 +48,26 @@ public class basicOfLinkedList {
         }
 
         currentNode.next = newNode;
+    }
+
+    //delete last
+    public void deleteLast(){
+        if (head == null) {
+            System.out.println("The list is empty");
+            return;
+        }
+
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+        Node secondlast = head;
+        Node lastNode = head.next;
+        while(lastNode.next != null){
+            lastNode = lastNode.next;
+            secondlast = secondlast.next;
+        }
+        secondlast.next = null;
     }
 
     public void printList(){
@@ -56,6 +86,10 @@ public class basicOfLinkedList {
         lsit.addFirst("a");
         lsit.addFirst("is");
         lsit.printList();
+        lsit.addLast("last");;
+        lsit.printList();
+        lsit.deleteFirst();
+        lsit.deleteLast();
 
     }
 }
