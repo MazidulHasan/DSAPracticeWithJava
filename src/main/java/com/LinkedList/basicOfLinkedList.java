@@ -86,7 +86,7 @@ public class basicOfLinkedList {
         lsit.addFirst("a");
         lsit.addFirst("is");
         lsit.printList();
-        lsit.addLast("last");;
+        lsit.addLast("last");
         lsit.printList();
         lsit.deleteFirst();
         lsit.deleteLast();
