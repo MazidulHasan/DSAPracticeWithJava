@@ -2,8 +2,8 @@ package com.AlphaReady.BinarySearch;
 
 public class BinarySearchBasic {
     public static void main(String[] args) {
-        int array[]= {2,4,6,8,10,12,14};
-        int key = 10;
+        int array[]= {2,5,8,12,16,23,38,56,72,91};
+        int key = 38;
         System.out.println(binarySearch(array,key));
     }
 
