@@ -1,0 +1,5 @@
+We use Backtracking for these purposes:
+    >Decision (Does solution exists or not)
+    >Optimization (I have a lot of solution but i need to find out the best one)
+    >Enumeration (List of possible solution)
+
