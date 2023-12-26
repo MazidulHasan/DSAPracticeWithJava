@@ -1,0 +1,43 @@
+JDK VS JRE VS JVM
+
+When writing and compiling Java code, each component (JDK, JRE, and JVM) plays a specific role in the development and execution process:
+
+JDK (Java Development Kit):
+    Role during code writing: 
+        The JDK provides the necessary tools for Java development. Developers use the JDK to write, edit, and manage their Java source code. 
+        It includes the Java compiler (javac) to translate human-readable Java source code into bytecode.
+
+    Role during compilation:
+        The JDK is responsible for compiling the Java source code into bytecode. After writing the code, developers use the javac command to compile it. For example:
+            javac HelloWorld.java
+            This command compiles the HelloWorld.java source code file into HelloWorld.class bytecode file.
+
+JRE (Java Runtime Environment):
+
+    Role during code writing: 
+        While writing code, developers may use the JRE indirectly. The JRE provides the runtime environment necessary for executing Java applications. 
+        However, during the actual code writing phase, developers primarily interact with the JDK.
+
+    Role during compilation: 
+        The JRE is not directly involved in the compilation process. Compilation is handled by the JDK. However, the compiled bytecode produced by the JDK is designed to run 
+        on any system with the appropriate JRE.
+
+JVM (Java Virtual Machine):
+
+    Role during code writing: 
+        The JVM is not directly involved in the code writing phase. Developers write Java code without concern for the specific details of the underlying hardware and 
+        operating system, thanks to the JVM's abstraction.
+
+    Role during compilation: 
+        The compiled bytecode produced by the JDK is platform-independent and is intended to be executed by the JVM. The JVM is responsible for interpreting the bytecode 
+        or, in some cases, Just-In-Time (JIT) compiling it into native machine code for the host system.
+
+    Role during execution: 
+        When the compiled Java program is run, the JVM is invoked using the java command. The JVM loads and executes the bytecode, providing the necessary runtime environment
+        for the Java application to run. For example:
+        
+        java HelloWorld
+        This command instructs the JVM to execute the HelloWorld Java program.
+
+In summary, the JDK is used for code development and compilation, the JRE provides the runtime environment for Java applications, and the JVM executes the compiled bytecode
+on the target system.

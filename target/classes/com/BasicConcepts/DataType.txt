@@ -1,0 +1,97 @@
+Source:: https://www.geeksforgeeks.org/data-types-in-java/
+
+Two types:
+    1. Primitive Data Type :: Primitive data are only single values and have no special capabilities. Ex: boolean, char, int, float, short, byte, long, double
+    2. Non-Primitive Data Type or Object Data type:: The Reference Data Types will contain a memory address of variable values because the reference types won’t 
+        store the variable value directly in memory. They are strings, objects, arrays, etc.
+
+String::
+    Strings are defined as an array of characters. The difference between a character array and a string in Java is, that the string is designed to hold a sequence
+    of characters in a single variable whereas, a character array is a collection of separate char-type entities.
+
+Class::
+    A class is a user-defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects 
+    of one type. In general, class declarations can include these components, in order: 
+    Modifiers: A class can be public or has default access. Refer to access specifiers for classes or interfaces in Java
+    Class name: The name should begin with an initial letter (capitalized by convention).
+    Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+    Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one 
+    interface.
+    Body: The class body is surrounded by braces, { }.
+
+Object::
+    An Object is a basic unit of Object-Oriented Programming and represents real-life entities.  A typical Java program creates many objects, which as you know, interact 
+    by invoking methods. An object consists of :
+    State: It is represented by the attributes of an object. It also reflects the properties of an object.
+    Behavior: It is represented by the methods of an object. It also reflects the response of an object to other objects.
+    Identity: It gives a unique name to an object and enables one object to interact with other objects.
+
+Interface::
+    Like a class, an interface can have methods and variables, but the methods declared in an interface are by default abstract (only method signature, no body).   
+    Interfaces specify what a class must do and not how. It is the blueprint of the class.
+    An Interface is about capabilities like a Player may be an interface and any class implementing Player must be able to (or must implement) move(). So it specifies 
+    a set of methods that the class has to implement.
+    If a class implements an interface and does not provide method bodies for all functions specified in the interface, then the class must be declared abstract.
+    A Java library example is Comparator Interface. If a class implements this interface, then it can be used to sort a collection.
+
+Array::
+    An Array is a group of like-typed variables that are referred to by a common name. Arrays in Java work differently than they do in C/C++.
+    In Java, all arrays are dynamically allocated. (discussed below)
+    Since arrays are objects in Java, we can find their length using member length. This is different from C/C++ where we find length using size.
+    A Java array variable can also be declared like other variables with [] after the data type.
+    The variables in the array are ordered and each has an index beginning with 0.
+    Java array can also be used as a static field, a local variable, or a method parameter.
+    The size of an array must be specified by an int value and not long or short.
+    The direct superclass of an array type is Object.
+    Every array type implements the interfaces Cloneable and java.io.Serializable.
+
+Questions::::::::::::::::
+
+What are the primitive data types in Java?
+byte, short, int, long, float, double, char, and boolean.
+Explain the difference between primitive data types and reference data types.
+Primitive data types store values, whereas reference data types store references to objects.
+
+What is autoboxing and unboxing in Java?
+Autoboxing is the automatic conversion of primitive types to their corresponding wrapper classes. Unboxing is the reverse operation.
+How does the size of primitive data types vary in Java?
+The size of primitive data types varies: byte (8 bits), short (16 bits), int (32 bits), long (64 bits), float (32 bits), double (64 bits), char (16 bits), 
+and boolean (not precisely defined).
+Explain the concept of casting in Java.
+Casting is the process of converting a variable from one data type to another. It can be explicit or implicit.
+
+What is the difference between float and double in Java?
+float is a 32-bit single-precision floating-point type, while double is a 64-bit double-precision floating-point type.
+
+How is the char data type different from other integral data types?
+char represents a 16-bit Unicode character, whereas other integral types represent numerical values.
+
+What is the default value of the boolean data type?
+The default value for boolean is false.
+
+How do you declare a constant in Java, and what is the naming convention for constants?
+Constants are declared using the final keyword. The naming convention is to use uppercase letters with underscores separating words (e.g., MAX_VALUE).
+
+What is the role of wrapper classes in Java? Provide an example.
+Wrapper classes provide a way to convert primitive types into objects. For example, Integer is the wrapper class for the int primitive type.
+Explain the significance of the String class in Java and how it differs from other data types.
+The String class represents a sequence of characters. Unlike primitive types, strings are objects and have methods for string manipulation.
+
+What is the difference between == and equals() when comparing objects in Java?
+== compares object references, while equals() compares the content of objects. In many classes, equals() is overridden to provide content-based comparison.
+
+How do you convert a string to an integer in Java?
+You can use the parseInt() method of the Integer class or the valueOf() method followed by unboxing.
+
+What is type casting, and how does it work in Java?
+Type casting is converting a variable from one data type to another. It can be implicit (automatic) or explicit (manual).
+Discuss the concept of widening and narrowing conversions in Java.
+Widening conversion occurs when a value of a smaller data type is converted to a larger data type. Narrowing conversion is the opposite.
+Explain the use of the instanceof operator in Java.
+instanceof checks if an object is an instance of a particular class or implements a particular interface.
+
+How does the enum data type differ from other data types in Java?
+enum is a special data type for a set of predefined constants. It is more powerful than constants and can have methods.
+
+What is the purpose of the null value in Java, and how is it different from other values?
+null represents the absence of a value. It is different from other values in that it is not an instance of any class and has no value.
