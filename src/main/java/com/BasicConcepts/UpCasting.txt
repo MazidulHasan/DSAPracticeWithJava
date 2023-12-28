@@ -1,0 +1,7 @@
+https://www.baeldung.com/java-type-casting
+
+https://www.youtube.com/watch?v=HpuH7n9VOYk&ab_channel=CodingwithJohn
+
+Upcasting::
+    Casting from a subclass to a superclass is called upcasting. Typically, the upcasting is implicitly performed by the compiler.
+    
