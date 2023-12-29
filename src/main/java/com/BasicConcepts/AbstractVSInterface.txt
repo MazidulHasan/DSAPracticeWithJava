@@ -1,0 +1,84 @@
+An abstract class is a class that cannot be instantiated and can contain both abstract and non-abstract methods. 
+An interface, on the other hand, is a contract that specifies a set of methods that a class must implement.
+
+
+Difference::
+Abstract Class:
+    1. Can have abstract class, variables and concrete method defined the body
+    2. Can have constructors 
+    3. Other class can only extend only one abstract class
+    4. Will be used by 
+        @override
+        public ....
+    5. Needed when we have a lot of closely similar classes doing the same thing
+
+Interface:
+    1. Can only have abstract class (only names), variables (Default final)
+    2. Other calss can implement one or multiple interface
+    3. No constructor is available
+    4. Needed when we need a specific type of class to do specific thing
+
+
+Questions::
+    Difference between abstract class and interface:
+        Abstract classes can have both abstract and concrete methods, while interfaces can only have abstract methods (before Java 8).
+        A class can extend only one abstract class, but it can implement multiple interfaces.
+        Abstract classes can have fields (variables), constructors, and methods with or without implementation, whereas interfaces can have only constant fields (before Java 8), abstract methods, and default/static methods (Java 8 onwards).
+
+    Can an abstract class have both abstract and concrete methods?
+        Yes, an abstract class can have both abstract (without implementation) and concrete (with implementation) methods.
+
+    How does an interface in Java promote multiple inheritance?
+        A class can implement multiple interfaces, allowing it to inherit the abstract methods from all the interfaces.
+
+    Can a class implement multiple interfaces in Java?
+        Yes, a class can implement multiple interfaces in Java.
+
+    Significance of the default keyword in interface methods (Java 8 onwards):
+        The default keyword allows the inclusion of method implementations in interfaces. Classes that implement the interface can use the default implementation or override it if needed.
+
+    Purpose of abstract classes and interfaces in the context of test automation:
+        Abstract classes and interfaces help in designing a flexible and modular test automation framework by promoting code reusability and providing a clear structure for test-related functionalities.
+
+    How to define an abstract method in an abstract class or interface:
+        In an abstract class, use the abstract keyword before the method declaration.
+        In an interface, methods are implicitly abstract, and you don't need to use the abstract keyword.
+
+    Why can't we create an instance of an abstract class directly?
+        Abstract classes may have abstract methods without implementations, and creating an instance of such a class would result in incomplete functionality. Abstract classes are meant to be extended by subclasses that provide concrete implementations for abstract methods.
+
+    Can an interface have fields? If yes, what are their properties?
+        Yes, interfaces can have constant fields, which are implicitly public, static, and final. They must be initialized.
+
+    How to implement an interface in a Java class:
+        Use the implements keyword in the class declaration, followed by the interface name.
+
+    Purpose of the abstract keyword in Java:
+        The abstract keyword is used to declare abstract classes and abstract methods. Abstract classes cannot be instantiated, and abstract methods must be implemented by non-abstract subclasses.
+
+    Can an abstract class extend another class in Java?
+        Yes, an abstract class can extend another class (abstract or concrete) in Java.
+
+    Concept of method overriding in the context of abstract classes and interfaces:
+        Method overriding allows a subclass to provide a specific implementation for a method that is already defined in its superclass or interface.
+
+    How to achieve abstraction through abstract classes and interfaces in test automation code:
+        Abstraction in test automation involves defining generic test functionality in abstract classes or interfaces, allowing concrete implementations in subclasses.
+
+    Significance of the static keyword in interface methods (Java 8 onwards):
+        The static keyword allows the inclusion of static methods in interfaces. These methods are associated with the interface rather than a specific instance of the class implementing the interface.
+
+    When to use an abstract class over an interface, and vice versa, in test automation code:
+        Use an abstract class when you want to provide a common base implementation for multiple classes. Use an interface when you want to define a contract that multiple classes can implement.
+
+    Can an abstract class have a constructor? If yes, how is it used?
+        Yes, an abstract class can have a constructor. It is used to initialize the fields of the abstract class or perform any necessary setup during object creation.
+
+    How to declare a constant value in an interface:
+        Use the public, static, and final keywords before declaring a constant field in an interface.
+
+    Purpose of the final keyword in the context of abstract classes and interfaces:
+        In an abstract class, a final method cannot be overridden by subclasses. In an interface, a final field cannot be modified by implementing classes.
+
+    Concept of encapsulation and its relation to abstract classes and interfaces in Java:
+        Encapsulation is the bundling of data and methods that operate on that data into a single unit (class). Abstract classes and interfaces help in achieving encapsulation by defining a clear contract for the interaction with the class or implementing classes.

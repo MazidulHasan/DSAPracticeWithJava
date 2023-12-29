@@ -1,0 +1,100 @@
+https://www.geeksforgeeks.org/inheritance-in-java/
+
+
+Java, Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is 
+allowed to inherit the features(fields and methods) of another class. In Java, Inheritance means creating new classes based on 
+existing ones. A class that inherits from another class can reuse the methods and fields of that class. In addition, you can add 
+new fields and methods to your current class as well.  
+
+Method Overriding: Method Overriding is achievable only through Inheritance. It is one of the ways by which Java achieves Run 
+    Time Polymorphism.
+
+Below are the different types of inheritance which are supported by Java.
+
+    Single Inheritance :: A serves as a base class for the derived class B. 
+    Multilevel Inheritance :: class A serves as a base class for the derived class B, which in turn serves as a base class for the derived class C.
+    Hierarchical Inheritance :: class A serves as a base class for the derived classes B, C, and D.
+    Multiple Inheritance :: Class C is derived from interfaces A and B.
+
+In Java, the extends keyword is used to establish an inheritance relationship between classes. The subclass inherits the members
+of the superclass and can also have additional members or override existing ones.
+
+
+Questions::
+What is inheritance in Java?
+
+    Inheritance is a feature in Java that allows a class (subclass) to inherit properties and behaviors from another class (superclass). It promotes code reuse and establishes a hierarchy of classes.
+
+Explain the difference between a superclass and a subclass.
+
+    A superclass is the class being inherited from, and a subclass is the class that inherits from the superclass. The subclass has access to the members (fields and methods) of the superclass.
+
+How is inheritance implemented in Java?
+
+    Inheritance in Java is implemented using the extends keyword. A subclass extends a superclass to inherit its members.
+
+What keyword is used to establish an inheritance relationship in Java?
+
+    The extends keyword is used to establish an inheritance relationship in Java.
+
+Can a Java class inherit from multiple classes? Why or why not?
+
+    No, Java does not support multiple inheritance for classes. A class can extend only one class to avoid ambiguity in method resolution.
+
+What is the purpose of the super keyword in Java?
+
+    The super keyword in Java is used to refer to the members (fields or methods) of the superclass. It is particularly useful when a subclass overrides a method and wants to call the superclass's version of that method.
+
+Explain method overriding in Java.
+
+    Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass. The method signature in the subclass must match the method signature in the superclass.
+
+How can you prevent a method from being overridden in a subclass?
+
+    You can use the final keyword in the method declaration of the superclass. This makes the method in the superclass not open for further overriding in any subclass.
+
+What is the Object class in Java, and how does it relate to inheritance?
+
+    The Object class is the root class for all classes in Java. All classes inherit directly or indirectly from the Object class. It provides common methods like equals, hashCode, and toString.
+
+Can a subclass access private members of its superclass?
+
+    No, a subclass cannot directly access private members (fields or methods) of its superclass. Private members are not inherited by the subclass.
+
+What is the significance of the final keyword in Java classes and methods?
+
+    When applied to a class, the final keyword prevents the class from being subclassed. When applied to a method, it prevents the method from being overridden in any subclass.
+
+Explain the concept of polymorphism in the context of inheritance.
+
+    Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables a single interface to represent different types of objects.
+
+How does Java support multiple inheritance through interfaces?
+
+    Java supports multiple inheritance through interfaces, where a class can implement multiple interfaces. This is different from class inheritance and helps avoid the issues associated with multiple inheritance of classes.
+
+What is the "diamond problem," and how does Java address it?
+
+    The "diamond problem" occurs in languages with multiple inheritance when a class inherits from two classes that have a common ancestor. Java avoids this problem by not allowing multiple inheritance for classes.
+
+How can you achieve code reuse through inheritance?
+
+    Code reuse is achieved by creating a base class with common functionality. Subclasses then inherit this base class, gaining access to its methods and fields. This avoids duplicating code.
+
+Explain the difference between is-a and has-a relationships in OOP.
+
+    Is-a relationship signifies inheritance (e.g., a Dog is a type of Animal), while has-a relationship signifies composition or containment (e.g., a Car has an Engine).
+
+Can you have a class without any methods? How does it affect inheritance?
+
+    Yes, a class can exist without any methods. It can still be inherited from, and subclasses can add their own methods or use inherited methods from the superclass.
+
+What is the purpose of the instanceof operator in Java?
+
+    The instanceof operator is used to test whether an object is an instance of a particular class or interface. It returns true if the object is an instance; otherwise, it returns false.
+
+Discuss the importance of the Object class methods (equals, hashCode, toString) in inheritance.
+
+    The Object class methods provide default implementations that can be overridden by subclasses. They are crucial for proper behavior of Java objects, especially when dealing with collections or comparing objects.
+
+How do you prevent a class from being inherited in Java?
