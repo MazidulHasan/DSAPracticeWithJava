@@ -1,0 +1,57 @@
+A framework is a set of classes and interfaces which provide a ready-made architecture.
+
+Collection interface:: (https://www.geeksforgeeks.org/collection-interface-in-java-with-examples/)
+    It implements the Iterable<E> interface.
+    All the Classes of the Collection Framework implement the subInterfaces of the Collection Interface. 
+
+    List: 
+    This is a child interface of the collection interface. This interface is dedicated to the data of the list type in 
+    which we can store all the "ordered collection" of the objects.
+    This list interface is implemented by various classes like 
+        ArrayList, 
+        Vector, 
+        Stack, etc.
+    
+    Set: 
+    A set is an "unordered collection" of objects in which duplicate values cannot be stored. This collection is used when we 
+    wish to avoid the duplication of the objects and wish to store only the unique objects. This set interface is implemented by 
+    various classes like 
+        HashSet, 
+        TreeSet (Sorted Set), 
+        LinkedHashSet, etc. 
+    
+    Queue: 
+    As the name suggests, a queue interface maintains the "FIFO"(First In First Out) order similar to a real-world queue line. 
+    This interface is dedicated to storing all the elements where the order of the elements matter.
+    There are various classes like 
+        PriorityQueue, 
+        Deque, 
+        ArrayDeque, etc.
+
+    Deque: 
+    This is a very slight variation of the queue data structure. Deque, also known as a double-ended queue, is a data structure 
+    where we can add and remove the elements from both the ends of the queue.
+
+
+https://www.geeksforgeeks.org/collections-in-java-2/
+
+    List :: ArrayList :: 
+    ArrayList provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs 
+    where lots of manipulation in the array is needed.Java ArrayList allows us to randomly access the list.
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        al.add(i);
+        al.remove(3);
+
+    List :: LinkedList :: 
+    The LinkedList class is an implementation of the LinkedList data structure which is a linear data structure where the elements are 
+    not stored in contiguous locations and every element is a separate object with a data part and address part.
+        LinkedList<Integer> ll = new LinkedList<Integer>();
+        ll.add(i);
+        ll.remove(3);
+
+    List :: Vector ::
+    A vector provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where 
+    lots of manipulation in the array is needed. 
+        Vector<Integer> v = new Vector<Integer>();
+        v.add(i);
+        v.remove(3);

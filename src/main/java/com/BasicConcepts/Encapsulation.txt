@@ -1,0 +1,89 @@
+https://www.geeksforgeeks.org/encapsulation-in-java/
+
+It is defined as the wrapping up of data under a single unit. It is the mechanism that binds together the code and the data it manipulates.
+Another way to think about encapsulation is that it is a protective shield that prevents the data from being accessed by the code outside this shield. 
+
+Technically, in encapsulation, the variables or the data in a class is hidden from any other class and can be accessed only through any member function of the class in which they are declared.
+In encapsulation, the data in a class is hidden from other classes, which is similar to what data-hiding does. So, the terms “encapsulation” and “data-hiding” are used interchangeably.
+Encapsulation can be achieved by declaring all the variables in a class as private and writing public methods in the class to set and get the values of the variables.
+
+Questions::
+    What is the difference between a class and an object in Java?
+
+    Answer: A class in Java is a blueprint or template that defines the attributes and behaviors common to all objects of that type. An object, on the other hand, is an instance of a class, created using the new keyword, and it represents a specific entity in a program.
+
+Explain the concept of inheritance and how it is implemented in Java.
+
+    Answer: Inheritance in Java allows a new class (subclass) to inherit attributes and methods from an existing class (superclass). It promotes code reuse. The extends keyword is used to implement inheritance in Java.
+
+How does polymorphism contribute to code flexibility in Java?
+
+    Answer: Polymorphism allows objects of different types to be treated as objects of a common type. It enhances code flexibility by enabling the use of a single interface to represent different types of objects and by supporting method overloading and overriding.
+
+Discuss the importance of encapsulation in Java programming.
+
+    Answer: Encapsulation in Java involves bundling data and methods that operate on that data within a single unit (class). It helps in hiding the internal implementation details, protecting the integrity of the data, and providing a controlled interface for interaction with the object.
+
+What is the purpose of the super keyword in Java?
+
+    Answer: The super keyword in Java is used to refer to the superclass (parent class) of the current object. It is often used to access the superclass's methods or fields that are overridden or hidden by the subclass.
+
+Describe the role of interfaces in Java and how they differ from abstract classes.
+
+    Answer: Interfaces in Java provide a way to achieve abstraction by specifying a set of methods that a class must implement. Unlike abstract classes, interfaces support multiple inheritance, and a class can implement multiple interfaces.
+
+Explain the "diamond problem" in the context of multiple inheritance in Java.
+
+    Answer: The "diamond problem" arises in languages that support multiple inheritance when a class inherits from two classes that have a common ancestor. It can lead to ambiguity in method resolution. Java avoids this problem by allowing a class to implement multiple interfaces but inherit from only one class.
+
+How is method overloading different from method overriding?
+
+    Answer: Method overloading involves defining multiple methods in the same class with the same name but different parameter lists. Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass.
+
+What is the purpose of the this keyword in Java, and when would you use it?
+
+    Answer: The this keyword in Java is a reference to the current object. It is used to differentiate instance variables from local variables when they have the same name. It is also used to invoke the current object's method within the class.
+
+How does Java support multiple inheritance, and what are its limitations?
+
+    Answer: Java supports multiple inheritance through interfaces, allowing a class to implement multiple interfaces. However, Java avoids the complexity associated with multiple inheritance by not allowing a class to directly inherit from more than one class.
+
+Discuss the significance of the final keyword in Java.
+
+    Answer: The final keyword in Java is used to indicate that a variable, method, or class cannot be changed or overridden. When applied to a variable, it makes the variable a constant. When applied to a method, it prevents the method from being overridden in subclasses. When applied to a class, it indicates that the class cannot be subclassed.
+
+What is the difference between an abstract class and an interface?
+
+    Answer: Abstract classes can have both abstract and concrete methods, may have instance variables, and support constructors. Interfaces, on the other hand, can only have abstract methods (prior to Java 8), cannot have instance variables, and support multiple inheritance.
+
+How do you achieve runtime polymorphism in Java?
+
+    Answer: Runtime polymorphism in Java is achieved through method overriding. When a subclass provides a specific implementation for a method that is already defined in its superclass, and the method is called through a reference to the superclass, the overridden method in the subclass is executed at runtime.
+
+Explain the principles of composition and aggregation in object-oriented design.
+
+    Answer: Composition involves creating objects of one class within another class, forming a "has-a" relationship. Aggregation is a special form of composition where objects can exist independently of each other. Both principles promote code reuse and flexibility in object-oriented design.
+
+How does Java support exception handling in the context of OOP?
+
+    Answer: Java uses the try, catch, finally, and throw keywords for exception handling. Exceptions are objects, and Java's exception hierarchy allows catching specific exceptions or their common base class to handle errors gracefully.
+
+Discuss the advantages of using interfaces over abstract classes.
+
+    Answer: Interfaces provide better support for multiple inheritance, as a class can implement multiple interfaces. They allow for the creation of loosely coupled systems and support the creation of utility classes. Interfaces also play a key role in Java's design patterns.
+
+What is the purpose of the static keyword in Java, and how is it related to OOP?
+
+    Answer: The static keyword in Java is used to create class-level members (variables and methods) that belong to the class rather than instances of the class. While it is not inherently object-oriented, static members are often used for utility methods or constants that are not tied to a specific instance.
+
+How would you implement a singleton pattern in Java?
+
+    Answer: The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. One common implementation involves a private constructor, a private static instance of the class, and a public static method to access that instance.
+
+Can you provide an example of the Liskov Substitution Principle in Java?
+
+    Answer: The Liskov Substitution Principle states that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program. An example in Java could involve substituting a subclass object for a superclass object without causing errors or unexpected behavior.
+
+Explain the concept of method chaining in the context of OOP and Java.
+
+    Answer: Method chaining involves invoking multiple methods on an object in a single line of code. Each method returns an instance of the object, allowing subsequent methods to be called. It is often used to create concise and expressive code.
