@@ -1,0 +1,135 @@
+Access Modifiers::
+    in Java, Access modifiers help to restrict the scope of a class, constructor, variable, method, or data member. 
+    It provides security, accessibility, etc to the user depending upon the access modifier used with the element.
+    Types of Access Modifiers in Java
+
+    There are four types of access modifiers available in Java: 
+
+        Default – No keyword required
+        Private - The methods or data members declared as private are accessible only within the class in which they are declared.
+        Protected - The methods or data members declared as protected are accessible within the same package or subclasses in different packages.
+        Public
+    
+
+    Example of use of Access Modifiers::
+    1.
+    // TestDataGenerator.java
+    public class TestDataGenerator {
+        protected String generateRandomUsername() {
+            // Logic to generate a random username
+        }
+    }
+
+    // RegistrationTest.java
+    public class RegistrationTest {
+        private TestDataGenerator testDataGenerator;
+
+        @Test
+        public void testUserRegistration() {
+            String username = testDataGenerator.generateRandomUsername();
+            // Use the generated username for registration
+        }
+    }
+
+
+    2.
+    // BasePage.java
+    public class BasePage {
+        protected WebDriver driver;
+
+        protected BasePage(WebDriver driver) {
+            this.driver = driver;
+        }
+
+        protected void clickElement(By locator) {
+            // Common method to click an element
+            driver.findElement(locator).click();
+        }
+    }
+
+    // HomePage.java
+    public class HomePage extends BasePage {
+        public HomePage(WebDriver driver) {
+            super(driver);
+        }
+
+        public void navigateToDashboard() {
+            // 'clickElement' is accessible here due to the protected modifier in BasePage
+            clickElement(By.linkText("Dashboard"));
+        }
+    }   
+
+
+
+    Common Questions::  
+        What are access modifiers in Java, and why are they important?
+        Access modifiers in Java are keywords that control the visibility of classes, fields, methods, and constructors in a program.
+        They are important for encapsulation, security, and defining the level of access to different components of a program.
+
+    Explain the differences between public, private, protected, and default (package-private) access modifiers.
+        Public: Accessible from any class.
+        Private: Accessible only within the same class.
+        Protected: Accessible within the same package and by subclasses.
+        Default (Package-Private): Accessible only within the same package.
+
+    How does the choice of access modifiers impact the design of a Java class?
+        It influences the visibility of class members, affecting how other classes interact with and use the class.
+
+    Why might you choose to make a method or field private in a class?
+        To encapsulate the implementation details and hide them from external classes.
+        Enhances security and prevents direct access to sensitive data.
+
+    Can a class be declared as both public and private? Why or why not?
+        No, a class cannot be declared as both public and private. They serve different purposes. A class is either accessible from anywhere (public) or restricted to its own class (private).
+
+    In a Java class, can a private method be accessed from another class in the same package? Why or why not?
+        No, a private method cannot be accessed from another class, even in the same package. Private members are accessible only within the declaring class.
+
+    What is the default access modifier in Java, and when is it used?
+        The default access modifier is package-private.
+        It is used when no access modifier is specified.
+        Members with default access are accessible within the same package.
+
+    How does the protected access modifier differ from the default (package-private) access modifier?
+        Protected members are accessible within the same package and by subclasses, even if they are in different packages.
+
+    Explain the concept of encapsulation and how access modifiers contribute to it.
+        Encapsulation is the bundling of data and methods that operate on the data within a single unit (class).
+        Access modifiers control access to class members, enabling encapsulation by hiding implementation details.
+
+    Can a subclass access private members of its superclass? Why or why not?
+        No, a subclass cannot access private members of its superclass. Private members are not inherited.
+
+    When should you use the public access modifier for a method or field?
+        Use public when you want the method or field to be accessible from any class.
+
+    How does access control apply to constructors in Java?
+        Access modifiers can be applied to constructors.
+        A private constructor prevents instantiation from outside the class, often used in singleton patterns.
+
+    What is the significance of access modifiers in the context of test automation?
+        Access modifiers help control access to methods and data, ensuring that tests interact with the system under test only through defined interfaces.
+
+    How can you restrict access to certain methods while allowing others to be publicly accessible?
+        Use access modifiers to set appropriate visibility for methods. Private for internal methods, public for those intended to be accessed externally.
+
+    Can you override a method with a different access modifier in a subclass?
+        No, you cannot override a method with a more restrictive access modifier in a subclass. The overridden method in the subclass must have the same or more permissive access level.
+
+    How do access modifiers contribute to the security of a Java program?
+        By restricting access to sensitive data and methods, access modifiers enhance security by preventing unauthorized access.
+
+    Explain the term "package" in Java and its relationship with access modifiers.
+        A package is a namespace that organizes a set of related classes and interfaces.
+        Access modifiers control visibility within packages, affecting how classes in the same package interact.
+
+    In a test automation framework, how might you use access modifiers to control test data access?
+        Use private access for internal data structures and methods, exposing only the necessary interfaces with public or protected access.
+
+    Can you give an example of a scenario where the protected access modifier is beneficial in test automation?
+        In a test framework, a base test class may have protected methods that are overridden by specific test classes, allowing customization while maintaining encapsulation.
+
+    How do access modifiers impact unit testing and the ability to mock objects in Java?
+        Access modifiers influence the design of classes and their methods, impacting how unit tests are written and how objects are mocked. Public methods are typically easier to test and mock than private ones.
+
+    

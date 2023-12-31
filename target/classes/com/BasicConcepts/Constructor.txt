@@ -1,0 +1,74 @@
+https://www.geeksforgeeks.org/constructors-in-java/
+
+Cosntructor::
+    A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a 
+    class is created. It can be used to set initial values for object attributes.Every time an object is created using the new() 
+    keyword, at least one constructor is called.
+
+    
+
+    Remember: Does constructor return any value?
+
+    There are no “return value” statements in the constructor, but the constructor returns the current class instance. We can write 
+    ‘return’ inside a constructor.
+
+Questions::
+    What is a constructor in Java?
+        A constructor in Java is a special method with the same name as the class, used to initialize objects of that class. It is called automatically when an object is created.
+
+    How is a constructor different from a regular method?
+        Constructors have the same name as the class and are used for initializing objects, while regular methods perform specific tasks or operations.
+
+    Can a class have multiple constructors?
+        Yes, a class can have multiple constructors. This is known as constructor overloading.
+
+    What is the purpose of a default constructor?
+        The default constructor is automatically provided by Java if no constructors are explicitly defined. It initializes object attributes to their default values.
+
+    How do you invoke a constructor in Java?
+        A constructor is invoked using the new keyword followed by the class name and a set of parentheses containing any required arguments.
+
+    Can a constructor have a return type?
+        No, a constructor does not have a return type, not even void. Its purpose is to initialize the object, and it returns an instance of the class.
+
+    What happens if you don't define a constructor in a class?
+        If no constructor is defined, Java provides a default constructor. If any constructor is explicitly defined, the default constructor is not automatically added.
+
+    Explain the concept of constructor overloading.
+        Constructor overloading is the ability to define multiple constructors in a class, each with a different signature (different parameters).
+
+    Can you call one constructor from another constructor in the same class?
+        Yes, using the this() keyword, a constructor can call another constructor in the same class.
+
+    What is the significance of the this keyword in a constructor?
+        The this keyword is used to refer to the current instance of the class. It is often used to differentiate instance variables from parameters with the same name.
+
+    Can a constructor be private?
+        Yes, a constructor can be private. This is often used in Singleton patterns or utility classes where you want to control the instantiation of objects.
+
+    How is a parameterized constructor different from a default constructor?
+        A parameterized constructor takes parameters, allowing you to initialize object attributes with specific values during object creation. A default constructor takes no parameters.
+
+    What is the role of the super keyword in a constructor?
+        The super keyword is used to call the constructor of the superclass. It is often used in the constructor of a subclass to invoke the constructor of the superclass.
+
+    How is the order of execution for instance variable initialization and constructor in Java?
+        Instance variables are initialized before the constructor is executed.
+
+    What is the purpose of the static keyword in a constructor?
+        Constructors cannot be static. They are called on instances of the class and not on the class itself.
+
+    Explain the difference between constructors and static methods.
+        Constructors are used to initialize objects, whereas static methods belong to the class and are called on the class itself, not on instances.
+
+    Can you create an object without invoking a constructor?
+        No, an object is always created by invoking a constructor.
+
+    What is the purpose of the final keyword in a constructor?
+        The final keyword in a constructor prevents the class from being subclassed or the method from being overridden.
+
+    How does constructor chaining work in Java?
+        Constructor chaining is the process of calling one constructor from another within the same class using the this() keyword.
+
+    Can you have a constructor in an interface in Java?
+        No, interfaces cannot have constructors in Java. They are meant to declare methods that implementing classes must implement.

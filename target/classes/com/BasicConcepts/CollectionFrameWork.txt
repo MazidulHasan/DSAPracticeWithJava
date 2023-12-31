@@ -1,0 +1,114 @@
+A framework is a set of classes and interfaces which provide a ready-made architecture.
+
+Collection interface:: (https://www.geeksforgeeks.org/collection-interface-in-java-with-examples/)
+    It implements the Iterable<E> interface.
+    All the Classes of the Collection Framework implement the subInterfaces of the Collection Interface. 
+
+    List: 
+    This is a child interface of the collection interface. This interface is dedicated to the data of the list type in 
+    which we can store all the "ordered collection" of the objects.
+    This list interface is implemented by various classes like 
+        ArrayList, 
+        Vector, 
+        Stack, etc.
+    
+    Set: 
+    A set is an "unordered collection" of objects in which "duplicate values cannot be stored". This collection is used when we 
+    wish to avoid the duplication of the objects and wish to store only the unique objects. This set interface is implemented by 
+    various classes like 
+        HashSet, 
+        TreeSet (Sorted Set), 
+        LinkedHashSet, etc. 
+    
+    Queue: 
+    As the name suggests, a queue interface maintains the "FIFO"(First In First Out) order similar to a real-world queue line. 
+    This interface is dedicated to storing all the elements where the order of the elements matter.
+    There are various classes like 
+        PriorityQueue, 
+        Deque, 
+        ArrayDeque, etc.
+
+    Deque: 
+    This is a very slight variation of the queue data structure. Deque, also known as a double-ended queue, is a data structure 
+    where we can add and remove the elements from both the ends of the queue.
+
+    Map :
+    A map is a data structure that supports the key-value pair for mapping the data. This interface "doesn’t support duplicate keys" 
+    because the same key cannot have multiple mappings, however, it allows duplicate values in different keys.
+    A map is useful if there is data and we wish to perform operations on the basis of the key.
+        HashMap
+        TreeMap
+
+
+https://www.geeksforgeeks.org/collections-in-java-2/
+
+    List :: ArrayList :: 
+    ArrayList provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs 
+    where lots of manipulation in the array is needed.Java ArrayList allows us to randomly access the list.
+        ArrayList<Integer> al = new ArrayList<Integer>();
+        al.add(i);
+        al.remove(3);
+
+    List :: LinkedList :: 
+    The LinkedList class is an implementation of the LinkedList data structure which is a linear data structure where the elements are 
+    not stored in contiguous locations and every element is a separate object with a data part and address part.
+        LinkedList<Integer> ll = new LinkedList<Integer>();
+        ll.add(i);
+        ll.remove(3);
+
+    List :: Vector ::
+    A vector provides us with dynamic arrays in Java. Though, it may be slower than standard arrays but can be helpful in programs where 
+    lots of manipulation in the array is needed. 
+        Vector<Integer> v = new Vector<Integer>();
+        v.add(i);
+        v.remove(3);
+
+    List :: Stack ::
+    The class is based on the basic principle of last-in-first-out. In addition to the basic push and pop operations, the class provides 
+    three more functions empty, search, and peek.
+        Stack<String> stack = new Stack<String>();
+        stack.push("Geeks");
+        stack.pop();
+    
+    Queue::
+    As the name suggests, a queue interface maintains the FIFO(First In First Out) order similar to a real-world queue line. This interface 
+    is dedicated to storing all the elements where the order of the elements matter.
+        
+    Queue :: Priority Queue ::
+    A PriorityQueue is used when the objects are supposed to be processed based on priority. It is known that a queue follows the First-In-First-Out algorithm
+        PriorityQueue<Integer> pQueue = new PriorityQueue<Integer>();
+        pQueue.add(10);
+        pQueue.peek();
+    
+    Set :: HashSet ::
+    The HashSet class is an inherent implementation of the hash table data structure. The objects that we insert into the HashSet do not guarantee to be 
+    inserted in the same order.The objects are inserted based on their hashcode. This class also allows the insertion of NULL elements.
+        HashSet<String> hs = new HashSet<String>();
+        hs.add("Geeks");
+        // Traversing elements
+        Iterator<String> itr = hs.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+
+    Set :: LinkedHashSet ::
+    A LinkedHashSet is very similar to a HashSet. The difference is that this uses a doubly linked list to store the data and retains the ordering of the elements. 
+        LinkedHashSet<String> lhs = new LinkedHashSet<String>();
+        lhs.add("Geeks");   
+        // Traversing elements
+        Iterator<String> itr = lhs.iterator();
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
+
+    Map :: HashMap ::
+    HashMap provides the basic implementation of the Map interface of Java. It stores the data in (Key, Value) pairs. To access a value in a HashMap, we must know its key. 
+    HashMap uses a technique called Hashing.
+        HashMap<Integer, String> hm = new HashMap<Integer, String>();
+        hm.put(1, "Geeks");
+        // Traversing through the HashMap
+        for (Map.Entry<Integer, String> e : hm.entrySet())
+            System.out.println(e.getKey() + " "+ e.getValue());
+    
+    ***In summary, use HashSet when you need a collection of unique elements without key-value pairs, and use HashMap when you need to associate values with keys in 
+    a key-value pair structure.

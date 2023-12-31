@@ -1,3 +1,61 @@
-Object::
-    Objects are the instances of a class that are created to use the attributes and methods of a class.An object consists of : 
-    
+Questions::
+        What is an object in Java?
+        An object in Java is an instance of a class. It encapsulates data and behavior and is a runtime entity.
+
+    Explain the difference between a class and an object.
+        A class is a blueprint or template that defines the structure and behavior of objects. An object is an instance of a class, representing a real-world entity.
+
+    How is encapsulation implemented in Java?
+        Encapsulation in Java is implemented using access modifiers (e.g., private, public, protected) to control access to the class members. It involves bundling data and methods within a class 
+        and providing controlled access to them.
+
+    What is the purpose of the "new" keyword in Java?
+        The "new" keyword is used to create an instance of a class, i.e., an object. It allocates memory for the object and returns a reference to it.
+
+    How does Java support multiple inheritance?
+        Java supports multiple inheritance through interfaces. A class can implement multiple interfaces, allowing it to inherit abstract methods from each interface.
+
+    What is the significance of the "this" keyword in Java?
+        The "this" keyword refers to the current instance of the class. It is used to differentiate between instance variables and parameters with the same name.
+
+    Explain the concept of constructor overloading.
+        Constructor overloading in Java involves defining multiple constructors in a class, each with a different parameter list. This allows objects to be instantiated with different sets of initial values.
+
+    How is method overloading different from method overriding?
+        Method overloading involves defining multiple methods in the same class with the same name but different parameter lists. Method overriding occurs in a subclass, where a method with the same signature as a method in the superclass is provided.
+
+    What is the "super" keyword used for in Java?
+        The "super" keyword in Java is used to refer to the immediate parent class's members. It is often used to invoke the parent class's methods and access its fields.
+
+    How can you achieve runtime polymorphism in Java?
+        Runtime polymorphism in Java is achieved through method overriding. It allows a subclass to provide a specific implementation of a method defined in its superclass.
+
+    Discuss the importance of the "equals" method in Java objects.
+        The "equals" method is used to compare the equality of two objects. It is important for proper object comparison and is often overridden in classes to define custom equality checks.
+
+    How does garbage collection work in Java?
+        Garbage collection in Java automatically reclaims memory by identifying and disposing of objects that are no longer reachable or in use by the program.
+
+    What is the difference between shallow copy and deep copy of objects?
+        Shallow copy duplicates the object but not the objects referenced by it. Deep copy duplicates both the object and the objects referenced by it, creating entirely independent copies.
+
+    Explain the "final" keyword in the context of classes and methods.
+        In the context of classes, "final" makes a class uninheritable. In the context of methods, "final" prevents method overriding.
+
+    Discuss the use of the "static" keyword in Java.
+        The "static" keyword is used to declare members (variables and methods) that belong to the class rather than instances of the class. Static members can be accessed using the class name.
+
+    How would you implement serialization and deserialization in Java?
+        Serialization is the process of converting an object into a byte stream, while deserialization is the process of reconstructing an object from a byte stream. In Java, this is often achieved using the Serializable interface.
+
+    What is the purpose of the "instanceof" operator?
+        The "instanceof" operator is used to test whether an object is an instance of a particular class or interface. It returns a boolean value.
+
+    Can you have a method in a Java interface with a body? Why or why not?
+        In Java, before Java 8, methods in interfaces were abstract and didn't have a body. With Java 8, default and static methods were introduced in interfaces, allowing them to have method bodies.
+
+    Discuss the differences between abstract classes and interfaces in Java.
+        Abstract classes can have both abstract and concrete methods, while interfaces can only have abstract methods (before Java 8). Interfaces support multiple inheritance, while classes do not.
+
+    How would you handle exceptions in Java when working with objects?
+        Exceptions in Java can be handled using try-catch blocks. If an exception occurs, it can be caught and appropriate actions can be taken, such as logging an error or providing a default value.
