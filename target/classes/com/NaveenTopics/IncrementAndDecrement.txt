@@ -1,0 +1,7 @@
+1. Post increment
+    int a = 1;
+    syso(a++);//1
+    syso(a);//2
+2. Pre increment
+    int a = 1;
+    syso(++a); //2

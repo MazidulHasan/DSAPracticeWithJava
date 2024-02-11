@@ -1,0 +1,13 @@
+> We can cast data from low premetive data type to higher data type
+Serial:::
+byte > sort > char > int > long > float > double
+
+so we can do wideing and Narrowing
+
+wideing: converting lower data to higher
+    long l1 = 1000;
+    float f1 =l1;
+
+Narrowing: converting higher data to lower (Needs casting)
+    int n = 200;
+    byte byt = (byte) n;
